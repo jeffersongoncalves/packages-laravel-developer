@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a24d44410584aaa9236fad18052f658c",
+    "content-hash": "9dfa7c28b7b1a0ad37f21890b116efa8",
     "packages": [
         {
             "name": "brick/math",
@@ -1051,6 +1051,849 @@
                 }
             ],
             "time": "2025-08-22T14:27:06+00:00"
+        },
+        {
+            "name": "jeffersongoncalves/laravel-cep",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-cep",
+                "reference": "16b787575b3ab81657c7218c5f7b10184ba0dae7"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.24",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Cep\\CepServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Cep\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Cep\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple and efficient PHP package for querying Brazilian postal codes (CEP). This package provides an easy way to retrieve address information from Brazilian ZIP codes through multiple providers.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-cep",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-cep"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-cookie-consent",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-cookie-consent",
+                "reference": "df66ed04f187ac4027c54ee433b1697578b1397c"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\CookieConsent\\CookieConsentServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\CookieConsent\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package provides a simple and elegant way to implement cookie consent on your website, ensuring compliance with privacy regulations like GDPR and CCPA. It offers a clean and customizable interface, allowing you to easily manage and display cookie consent banners and preferences.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-cookie-consent",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-cookie-consent"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-created-by",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-created-by",
+                "reference": "c8d187398610773b69208d25e4bac3218f19d0f5"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\CreatedBy\\CreatedByServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\CreatedBy\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "JeffersonGoncalves\\CreatedBy\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package automatically logs the currently logged-in user's ID to the `created_by`, `updated_by`, `deleted_by`, and `restored_by` fields of your Eloquent models. It also automatically timestamps the `restored_at` field when a model is restored. This simplifies the tracking of data modifications and provides valuable auditing capabilities. The package is easy to install and configure, seamlessly integrating with your existing Laravel application.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-created-by",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-created-by"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-fake-cartoons",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-fake-cartoons",
+                "reference": "d2b303d0957a26aca5534fa631697dc336dd98bd"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.24",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\FakeCartoons\\FakeCartoonsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\FakeCartoons\\": "src/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package provides a Faker provider to generate fictional cartoon company names. Perfect for seeding your database with fun and recognizable company names from popular cartoons and animated series.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-fake-cartoons",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-fake-cartoons"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-fathom",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-fathom",
+                "reference": "c7a594470a779a97aa6a24a66c3b418c0ac09f93"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Fathom\\FathomServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Fathom\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package seamlessly integrates Fathom analytics into your Blade templates. Easily track website visits and user engagement directly within your Laravel application, providing valuable insights into your website's performance. This package simplifies the integration process, saving you time and effort. With minimal configuration, you can leverage Fathom's powerful analytics features to gain a clearer understanding of your audience and website usage.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-fathom",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-fathom"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-gtag",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-gtag",
+                "reference": "80af5953e940fa2465afeb0ec627f63d8568c98d"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Gtag\\GtagServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Gtag\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package provides a straightforward integration of Google Analytics using Gtag into your Blade templates. It enables you to easily track website visits and user engagement, offering valuable insights into your site's performance. With minimal setup, you can leverage Gtag's powerful analytics features to better understand your audience and improve your website's effectiveness.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-gtag",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-gtag"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-gtm",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-gtm",
+                "reference": "9146418f712e588077c0f5f41b9fe13d0866c950"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Gtm\\GtmServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Gtm\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This plugin seamlessly integrates Google Tag Manager (GTM) into your website, enabling streamlined management and deployment of marketing tags, analytics, and tracking pixels. With easy-to-implement script inclusion and customizable options, it simplifies the process of monitoring user interactions and gathering valuable insights without altering your site's core code. Perfect for marketers and developers looking to enhance their tracking capabilities with minimal effort.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-gtm",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-gtm"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-matomo",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-matomo",
+                "reference": "32011a38faae7306483af5a7f68676a9246b5be2"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Matomo\\MatomoServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Matomo\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple and elegant Laravel package that seamlessly integrates Matomo Analytics tracking code into your Blade views.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-matomo",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-matomo"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-pixel",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-pixel",
+                "reference": "92b77b98fbf160692f242cf69971fb58a252a612"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Pixel\\PixelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Pixel\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package offers a straightforward way to integrate Meta (Facebook) Pixel into your application. By configuring your Pixel ID, you can effortlessly track user interactions, page views, conversions, and other valuable events on your website. This helps you gather insights into your audience behavior and optimize your advertising campaigns. The package simplifies the process of adding the Pixel script to your Blade templates, enabling seamless analytics collection with minimal setup.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-pixel",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-pixel"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-plausible",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-plausible",
+                "reference": "69147afe5ae703c56ef1bfe2a3202ef30d599182"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Plausible\\PlausibleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Plausible\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A lightweight Laravel package that seamlessly integrates Plausible Analytics into your Blade views. Plausible.io is a privacy-friendly, open-source alternative to Google Analytics.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-plausible",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-plausible"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-umami",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-umami",
+                "reference": "aa1bc8266a038c4a3d4dcd34a463348b1368d8ed"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\Umami\\UmamiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\Umami\\": "src"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package seamlessly integrates Umami analytics into your Blade templates. Easily track website visits and user engagement directly within your Laravel application, providing valuable insights into your website's performance. This package simplifies the integration process, saving you time and effort. With minimal configuration, you can leverage Umami's powerful analytics features to gain a clearer understanding of your audience and website usage.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-umami",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-umami"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "jeffersongoncalves/laravel-whatsapp-widget",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./packages/laravel-whatsapp-widget",
+                "reference": "8b1459fecf9f614f5cb8cb82aebd681508e23412"
+            },
+            "require": {
+                "laravel/framework": "^11.0|^12.0",
+                "php": "^8.2|^8.3",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "orchestra/testbench": "^9.0|^10.0",
+                "pestphp/pest": "^3.7.4",
+                "pestphp/pest-plugin-laravel": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "JeffersonGoncalves\\WhatsappWidget\\WhatsappWidgetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JeffersonGoncalves\\WhatsappWidget\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "JeffersonGoncalves\\WhatsappWidget\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jefferson Gonçalves",
+                    "email": "gerson.simao.92@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This Laravel package provides a simple yet customizable WhatsApp widget for your website. It allows you to easily add a clickable WhatsApp button or floating widget to connect visitors directly with your WhatsApp account. The widget is designed to be easily integrated into your Laravel application and is fully customizable to match your website's design.",
+            "homepage": "https://github.com/jeffersongoncalves/laravel-whatsapp-widget",
+            "keywords": [
+                "jeffersongoncalves",
+                "laravel",
+                "laravel-whatsapp-widget"
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "laravel/framework",
@@ -3289,6 +4132,67 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
             "time": "2025-12-14T04:43:48+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.92.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "f09a799850b1ed765103a4f0b4355006360c49a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/f09a799850b1ed765103a4f0b4355006360c49a5",
+                "reference": "f09a799850b1ed765103a4f0b4355006360c49a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^1.23|^2.1|^3.1",
+                "phpunit/php-code-coverage": "^9.0|^10.0|^11.0",
+                "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
+                "spatie/pest-plugin-test-time": "^1.1|^2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-07-17T15:46:43+00:00"
         },
         {
             "name": "symfony/clock",
@@ -9543,8 +10447,21 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": {},
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "jeffersongoncalves/laravel-cep": 20,
+        "jeffersongoncalves/laravel-cookie-consent": 20,
+        "jeffersongoncalves/laravel-created-by": 20,
+        "jeffersongoncalves/laravel-fake-cartoons": 20,
+        "jeffersongoncalves/laravel-fathom": 20,
+        "jeffersongoncalves/laravel-gtag": 20,
+        "jeffersongoncalves/laravel-gtm": 20,
+        "jeffersongoncalves/laravel-matomo": 20,
+        "jeffersongoncalves/laravel-pixel": 20,
+        "jeffersongoncalves/laravel-plausible": 20,
+        "jeffersongoncalves/laravel-umami": 20,
+        "jeffersongoncalves/laravel-whatsapp-widget": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
