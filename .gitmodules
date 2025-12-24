@@ -46,3 +46,7 @@
 	path = packages/laravel-cep
 	url = git@github.com:jeffersongoncalves/laravel-cep.git
 	branch = master
+[submodule "packages/laravel-service-desk"]
+	path = packages/laravel-service-desk
+	url = git@github.com:jeffersongoncalves/laravel-service-desk.git
+	branch = master
