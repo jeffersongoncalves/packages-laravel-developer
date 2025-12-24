@@ -1,0 +1,48 @@
+[submodule "packages/laravel-fake-cartoons"]
+	path = packages/laravel-fake-cartoons
+	url = git@github.com:jeffersongoncalves/laravel-fake-cartoons.git
+	branch = master
+[submodule "packages/laravel-whatsapp-widget"]
+	path = packages/laravel-whatsapp-widget
+	url = git@github.com:jeffersongoncalves/laravel-whatsapp-widget.git
+	branch = master
+[submodule "packages/laravel-cookie-consent"]
+	path = packages/laravel-cookie-consent
+	url = git@github.com:jeffersongoncalves/laravel-cookie-consent.git
+	branch = master
+[submodule "packages/laravel-created-by"]
+	path = packages/laravel-created-by
+	url = git@github.com:jeffersongoncalves/laravel-created-by.git
+	branch = master
+[submodule "packages/laravel-umami"]
+	path = packages/laravel-umami
+	url = git@github.com:jeffersongoncalves/laravel-umami.git
+	branch = master
+[submodule "packages/laravel-plausible"]
+	path = packages/laravel-plausible
+	url = git@github.com:jeffersongoncalves/laravel-plausible.git
+	branch = master
+[submodule "packages/laravel-matomo"]
+	path = packages/laravel-matomo
+	url = git@github.com:jeffersongoncalves/laravel-matomo.git
+	branch = master
+[submodule "packages/laravel-pixel"]
+	path = packages/laravel-pixel
+	url = git@github.com:jeffersongoncalves/laravel-pixel.git
+	branch = master
+[submodule "packages/laravel-gtag"]
+	path = packages/laravel-gtag
+	url = git@github.com:jeffersongoncalves/laravel-gtag.git
+	branch = master
+[submodule "packages/laravel-gtm"]
+	path = packages/laravel-gtm
+	url = git@github.com:jeffersongoncalves/laravel-gtm.git
+	branch = master
+[submodule "packages/laravel-fathom"]
+	path = packages/laravel-fathom
+	url = git@github.com:jeffersongoncalves/laravel-fathom.git
+	branch = master
+[submodule "packages/laravel-cep"]
+	path = packages/laravel-cep
+	url = git@github.com:jeffersongoncalves/laravel-cep.git
+	branch = master
